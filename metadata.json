@@ -1,0 +1,7 @@
+{
+  "name": "Academia Boa Forma",
+  "description": "Site institucional profissional para a Academia Boa Forma, destacando planos, aulas, professores e infraestrutura de ponta.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

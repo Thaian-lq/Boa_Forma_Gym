@@ -20,7 +20,7 @@ export const CLASSES: ClassItem[] = [
     id: '3',
     title: 'Bike Indoor',
     description: 'Aulas de ciclismo indoor de alta intensidade para queimar calorias e ganhar resistência.',
-    image: 'https://revistaabm.com.br/storage/2019/04/04/a745243a03281275a69ab3aae01c47cf87fe36dc.jpg',//https://images.unsplash.com/photo-1534258936925-c58bed479fcb?q=80&w=800&auto=format&fit=crop
+    image: 'https://revistaabm.com.br/storage/2019/04/04/a745243a03281275a69ab3aae01c47cf87fe36dc.jpg',
     icon: 'Bike'
   },
   {

@@ -6,21 +6,21 @@ export const CLASSES: ClassItem[] = [
     id: '1',
     title: 'Musculação',
     description: 'Treino de força completo com equipamentos de última geração e supervisão profissional.',
-    image: 'imgs/musculacao-img.png', 
+    image: 'https://v4excellencefitness.com.br/wp-content/uploads/2024/08/23478.jpg', 
     icon: 'Dumbbell'
   },
   {
     id: '2',
     title: 'Funcional Kids',
     description: 'Atividades lúdicas e dinâmicas para desenvolver a coordenação e saúde das crianças.',
-    image: 'imgs/funcionalkids-img.png',
+    image: 'https://espacolaysguimaraes.com.br/wp-content/uploads/2021/02/9.jpg',
     icon: 'Trophy'
   },
   {
     id: '3',
     title: 'Bike Indoor',
     description: 'Aulas de ciclismo indoor de alta intensidade para queimar calorias e ganhar resistência.',
-    image: 'imgs/bike-img.png',//https://images.unsplash.com/photo-1534258936925-c58bed479fcb?q=80&w=800&auto=format&fit=crop
+    image: 'https://revistaabm.com.br/storage/2019/04/04/a745243a03281275a69ab3aae01c47cf87fe36dc.jpg',//https://images.unsplash.com/photo-1534258936925-c58bed479fcb?q=80&w=800&auto=format&fit=crop
     icon: 'Bike'
   },
   {

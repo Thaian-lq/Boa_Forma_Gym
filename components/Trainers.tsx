@@ -18,7 +18,7 @@ const Trainers: React.FC = () => {
     <section id="professores" className="py-24 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-black text-gray-900 mb-4 tracking-tight uppercase">Equipe de Elite</h2>
+          <h2 className="text-4xl font-black text-gray-900 mb-4 tracking-tight uppercase">Equipe de Boa Forma</h2>
           <div className="w-20 h-1.5 bg-primary mx-auto mb-6 rounded-full"></div>
           <p className="text-gray-600 font-medium">Nossos profissionais são altamente qualificados para te guiar em cada passo.</p>
         </div>

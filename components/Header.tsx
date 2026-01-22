@@ -33,7 +33,7 @@ const Header: React.FC = () => {
           </div>
           <div className="flex flex-col leading-tight">
             <span className={`font-black text-xl tracking-tighter ${isScrolled ? 'text-gray-900' : 'text-white'}`}>BOA FORMA</span>
-            <span className={`text-[10px] font-bold uppercase tracking-widest ${isScrolled ? 'text-primary' : 'text-primary-light'}`}>Academia</span>
+            <span className={`text-[10px] font-bold uppercase tracking-widest ${isScrolled ? 'text-primary' : 'text-white'}`}>Academia</span>
           </div>
         </div>
 

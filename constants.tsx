@@ -37,25 +37,25 @@ export const TRAINERS: Trainer[] = [
     id: '1',
     name: 'Matheus José',
     specialty: 'Personal Trainer & Musculação',
-    //image: 'https://images.unsplash.com/photo-1567013127542-490d757e51fe?q=80&w=400&h=400&auto=format&fit=crop'
+    image:'https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png',
   },
   {
     id: '2',
     name: 'Bianca',
     specialty: 'Especialista em Funcional Kids',
-    //image: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=400&h=400&auto=format&fit=crop'
+    image: 'https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png',
   },
   {
     id: '3',
     name: 'Virna',
     specialty: 'Instrutor de Bike Indoor',
-    //image:'https://images.unsplash.com/photo-1548690312-e3b507d17a47?q=80&w=400&h=400&auto=format&fit=crop'
+    image:'https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png',
   },
   {
     id: '4',
     name: 'Curitiba',
     specialty: 'Personal Trainer & Musculação',
-    //image: 'https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=400&h=400&auto=format&fit=crop'
+    image: 'https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png',
   }
 ];
 

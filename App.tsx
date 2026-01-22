@@ -7,8 +7,11 @@ import Trainers from './components/Trainers';
 import Schedule from './components/Schedule';
 import Location from './components/Location';
 import Footer from './components/Footer';
+import ScrollSmooth from './SmoothScroll';
 
 const App: React.FC = () => {
+  ScrollSmooth();
+
   return (
     <div className="min-h-screen">
       <Header />

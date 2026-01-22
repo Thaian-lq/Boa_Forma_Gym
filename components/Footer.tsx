@@ -72,8 +72,8 @@ const Footer: React.FC = () => {
         <div className="border-t border-white/5 pt-8 text-center text-sm text-gray-500 font-medium flex flex-col md:flex-row justify-between items-center gap-4">
           <p>© {new Date().getFullYear()} Academia Boa Forma. Todos os direitos reservados.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-primary-light">Privacidade</a>
-            <a href="#" className="hover:text-primary-light">Termos de Uso</a>
+            {/* <a href="#" className="hover:text-primary-light">Privacidade</a>
+            <a href="#" className="hover:text-primary-light">Termos de Uso</a> */}
           </div>
         </div>
       </div>

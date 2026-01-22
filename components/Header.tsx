@@ -48,9 +48,9 @@ const Header: React.FC = () => {
               {item.label}
             </a>
           ))}
-          <a href="#contato" className="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-primary-dark transition-all transform hover:scale-105">
+          {/* <a href="#contato" className="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-primary-dark transition-all transform hover:scale-105">
             Treine Agora
-          </a>
+          </a> */}
         </nav>
 
         {/* Mobile Toggle */}

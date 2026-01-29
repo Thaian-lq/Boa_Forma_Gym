@@ -16,9 +16,9 @@ const Classes: React.FC = () => {
             </p>
           </div>
           <div className="hidden md:block">
-            <button className="bg-gray-100 text-gray-700 px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition-colors">
+            {/* <button className="bg-gray-100 text-gray-700 px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition-colors">
               Ver grade completa
-            </button>
+            </button> */}
           </div>
         </div>
 

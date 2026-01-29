@@ -21,10 +21,10 @@ const Footer: React.FC = () => {
               Ajudando você a transformar sua vida através do esporte e da disciplina.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-all text-gray-300 hover:text-white">
+              <a href="https://www.instagram.com/boaformavr/" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-all text-gray-300 hover:text-white" target="_blank" rel="noopener noreferrer">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-all text-gray-300 hover:text-white">
+              <a href="https://www.facebook.com/academiaboaformanoface/?locale=pt_BR" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-all text-gray-300 hover:text-white" target="_blank" rel="noopener noreferrer">
                 <Facebook size={20} />
               </a>
               {/* <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-all text-gray-300 hover:text-white">
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-gray-400 font-medium">
               <li>Rua 22, 647 – Vila Rica</li>
               <li>Tiradentes, Volta Redonda – RJ</li>
-              <li>(24) 99999-9999</li>
+              <li>(24) 99881-6218</li>
               <li>contato@boafomavr.com.br</li>
             </ul>
           </div>

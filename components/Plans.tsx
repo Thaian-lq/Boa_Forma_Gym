@@ -18,11 +18,11 @@ const Plans: React.FC = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {PLANS.map((plan) => (
-            <div 
-              key={plan.id} 
+            <div
+              key={plan.id}
               className={`relative bg-white p-8 rounded-3xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col ${
-                plan.highlight 
-                ? 'ring-4 ring-primary/20 border-2 border-primary shadow-2xl z-10 scale-105' 
+                plan.highlight
+                ? 'ring-4 ring-primary/20 border-2 border-primary shadow-2xl z-10 scale-105'
                 : 'border border-gray-100 shadow-xl'
               }`}
             >
@@ -31,9 +31,9 @@ const Plans: React.FC = () => {
                   Mais Popular
                 </div>
               )}
-              
+
               <h3 className="text-2xl font-black text-gray-800 mb-6">{plan.name}</h3>
-              
+
               <ul className="space-y-4 mb-8 flex-grow">
                 {plan.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-3 text-gray-600 font-medium">
@@ -71,7 +71,8 @@ const Plans: React.FC = () => {
                 </div>
                 <div className="text-left">
                   <p className="text-xs font-bold text-gray-400 uppercase">Parceiro Oficial</p>
-                  <p className="text-2xl font-black text-gray-900">Wellhub</p>
+                  {/* <p className="text-2xl font-black text-gray-900">Wellhub</p> */}
+                  <a href="https://wellhub.com/pt-br/search/partners/academia-boa-forma-7a03f7b4-852d-4dd8-8dcf-f72d41cfca8c/" className="text-2xl font-black text-gray-900 transition-all duration-300 hover:text-primary" target="_blank" rel="noopener noreferrer">Wellhub</a>
                 </div>
               </div>
               <div className="w-px h-12 bg-gray-200 hidden md:block"></div>
@@ -81,7 +82,14 @@ const Plans: React.FC = () => {
                 </div>
                 <div className="text-left">
                   <p className="text-xs font-bold text-gray-400 uppercase">Parceiro Oficial</p>
-                  <p className="text-2xl font-black text-gray-900">TotalPass</p>
+                  {/* <p className="text-2xl font-black text-gray-900">TotalPass</p> */}
+                  <a
+                    href="https://totalpass.com/br/academias/academia-boa-forma-301b1c0b-e4ba-4539-8fff-33a3e8336154/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" text-2xl font-black text-gray-900 transition-all duration-300 hover:text-primary">
+                    TotalPass
+                  </a>
                 </div>
               </div>
             </div>

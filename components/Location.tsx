@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { MapPin, Phone, ExternalLink } from 'lucide-react';
+import { MapPin, Phone, ExternalLink, MapIcon } from 'lucide-react';
 
 const Location: React.FC = () => {
   return (

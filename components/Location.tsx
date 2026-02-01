@@ -30,7 +30,7 @@ const Location: React.FC = () => {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <a href="https://maps.google.com" target="_blank" className="flex items-center gap-2 bg-gray-900 text-white px-6 py-4 rounded-xl font-bold hover:bg-gray-800 transition-all">
+                <a href="https://www.google.com/maps/place/Academia+Boa+Forma/@-22.5439119,-44.0686169,1306m/data=!3m2!1e3!4b1!4m6!3m5!1s0x9ea2f996824503:0x25984db540d72645!8m2!3d-22.5439169!4d-44.066042!16s%2Fg%2F11c6cpz5s6?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D" rel="noreferrer" target="_blank" className="flex items-center gap-2 bg-gray-900 text-white px-6 py-4 rounded-xl font-bold hover:bg-gray-800 transition-all">
                   Abrir no Maps <ExternalLink size={18} />
                 </a>
                 <a href="tel:24988232141" className="flex items-center gap-2 bg-primary/5 text-primary px-6 py-4 rounded-xl font-bold hover:bg-primary/10 transition-all border border-primary/10">

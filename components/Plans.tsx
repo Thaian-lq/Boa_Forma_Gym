@@ -1,10 +1,19 @@
-
 import React from 'react';
 import { Check, Info } from 'lucide-react';
 import { PLANS } from '../constants';
-
+import { logEvent } from '../src/analytics';
 
 const Plans: React.FC = () => {
+  // Função para rastrear clique nos planos
+  const handlePlanClick = (planName: string) => {
+    logEvent('Plans', 'Click', `Plano: ${planName}`);
+  };
+
+  // Função para rastrear clique nos parceiros
+  const handlePartnerClick = (partnerName: string) => {
+    logEvent('Partners', 'Click', `Parceiro: ${partnerName}`);
+  };
+
   return (
     <section id="planos" className="py-24 bg-gray-50">
       <div className="container mx-auto px-4 md:px-8">
@@ -50,11 +59,18 @@ const Plans: React.FC = () => {
                   <Info size={16} />
                   <span>Consulte valores no balcão</span>
                 </div>
-                {/* <button className={`w-full py-4 rounded-xl font-bold transition-all ${
-                  plan.highlight ? 'bg-primary text-white hover:bg-primary-dark' : 'bg-gray-900 text-white hover:bg-gray-800'
-                }`}>
+                
+                {/* BOTÃO SABER MAIS COM ANALYTICS */}
+                <button 
+                  onClick={() => handlePlanClick(plan.name)}
+                  className={`w-full py-4 rounded-xl font-bold transition-all ${
+                    plan.highlight 
+                      ? 'bg-primary text-white hover:bg-primary-dark' 
+                      : 'bg-gray-900 text-white hover:bg-gray-800'
+                  }`}
+                >
                   Saber mais
-                </button> */}
+                </button>
               </div>
             </div>
           ))}
@@ -63,36 +79,64 @@ const Plans: React.FC = () => {
         {/* Partners Section */}
         <div className="max-w-4xl mx-auto">
           <div className="bg-white border-2 border-dashed border-gray-200 rounded-3xl p-8 text-center">
-            <h4 className="text-xl font-bold text-gray-800 mb-8 uppercase tracking-widest">Aceitamos Benefícios Corporativos</h4>
+            <h4 className="text-xl font-bold text-gray-800 mb-8 uppercase tracking-widest">
+              Aceitamos Benefícios Corporativos
+            </h4>
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+              
+              {/* WELLHUB */}
               <div className="flex items-center gap-4 group">
                 <div className="w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center transition-colors group-hover:bg-primary/10">
                   <Check className="text-primary" size={32} />
                 </div>
                 <div className="text-left">
                   <p className="text-xs font-bold text-gray-400 uppercase">Parceiro Oficial</p>
-                  {/* <p className="text-2xl font-black text-gray-900">Wellhub</p> */}
-                  <a href="https://wellhub.com/pt-br/search/partners/academia-boa-forma-7a03f7b4-852d-4dd8-8dcf-f72d41cfca8c/" className="text-2xl font-black text-gray-900 transition-all duration-300 hover:text-primary" target="_blank" rel="noopener noreferrer">Wellhub</a>
+                  <a 
+                    href="https://wellhub.com/pt-br/search/partners/academia-boa-forma-7a03f7b4-852d-4dd8-8dcf-f72d41cfca8c/" 
+                    className="text-2xl font-black text-gray-900 transition-all duration-300 hover:text-primary" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    onClick={() => handlePartnerClick('Wellhub')}
+                  >
+                    Wellhub
+                  </a>
                 </div>
               </div>
+              
               <div className="w-px h-12 bg-gray-200 hidden md:block"></div>
+              
+              {/* TOTALPASS */}
               <div className="flex items-center gap-4 group">
                 <div className="w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center transition-colors group-hover:bg-primary/10">
                   <Check className="text-primary" size={32} />
                 </div>
                 <div className="text-left">
                   <p className="text-xs font-bold text-gray-400 uppercase">Parceiro Oficial</p>
-                  {/* <p className="text-2xl font-black text-gray-900">TotalPass</p> */}
                   <a
                     href="https://totalpass.com/br/academias/academia-boa-forma-301b1c0b-e4ba-4539-8fff-33a3e8336154/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className=" text-2xl font-black text-gray-900 transition-all duration-300 hover:text-primary">
+                    className="text-2xl font-black text-gray-900 transition-all duration-300 hover:text-primary"
+                    onClick={() => handlePartnerClick('TotalPass')}
+                  >
                     TotalPass
                   </a>
                 </div>
               </div>
             </div>
+            
+            {/* <div className="mt-8 pt-6 border-t border-gray-100">
+              <p className="text-sm text-gray-600 max-w-2xl mx-auto">
+                <span 
+                  className="font-semibold text-primary cursor-pointer hover:underline"
+                  onClick={() => logEvent('Info', 'Click', 'Como funciona benefícios')}
+                >
+                  Como funciona:
+                </span>{' '}
+                Verifique com o RH da sua empresa se ela oferece algum desses benefícios. 
+                Se sim, basta escolher nosso plano dentro do app e começar a treinar!
+              </p>
+            </div> */}
           </div>
         </div>
       </div>

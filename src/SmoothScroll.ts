@@ -1,13 +1,11 @@
-// src/hooks/useSmoothScroll.ts
 import { useEffect } from 'react';
 
 const useSmoothScroll = () => {
   useEffect(() => {
-    // Função para scroll suave
+
     const handleSmoothScroll = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      
-      // Verifica se é link âncora
+
       if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
         e.preventDefault();
         
@@ -30,10 +28,8 @@ const useSmoothScroll = () => {
       }
     };
 
-    // Adiciona listener
     document.addEventListener('click', handleSmoothScroll);
     
-    // Cleanup
     return () => {
       document.removeEventListener('click', handleSmoothScroll);
     };

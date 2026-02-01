@@ -1,6 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Dumbbell } from 'lucide-react';
+import { logNavigationClick } from '../src/analytics';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,6 +13,10 @@ const Header: React.FC = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleNavigationClick = (itemLabel: string) => {
+    logNavigationClick(itemLabel);
+  };
 
   const menuItems = [
     { label: 'Início', href: '#inicio' },
@@ -44,11 +48,16 @@ const Header: React.FC = () => {
               key={item.href} 
               href={item.href} 
               className={`text-sm font-semibold transition-colors hover:text-primary-light ${isScrolled ? 'text-gray-700' : 'text-gray-100'}`}
+              onClick={() => handleNavigationClick(item.label)}
             >
               {item.label}
             </a>
           ))}
-          {/* <a href="#contato" className="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-primary-dark transition-all transform hover:scale-105">
+          {/* <a 
+            href="#contato" 
+            className="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-primary-dark transition-all transform hover:scale-105"
+            onClick={() => handleNavigationClick('Treine Agora (Botão)')}
+          >
             Treine Agora
           </a> */}
         </nav>
@@ -56,7 +65,10 @@ const Header: React.FC = () => {
         {/* Mobile Toggle */}
         <button 
           className="lg:hidden p-2 rounded-md"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          onClick={() => {
+            setIsMobileMenuOpen(!isMobileMenuOpen);
+            handleNavigationClick(isMobileMenuOpen ? 'Menu Fechar' : 'Menu Abrir');
+          }}
         >
           {isMobileMenuOpen ? (
             <X className={isScrolled ? 'text-gray-900' : 'text-white'} />
@@ -73,15 +85,24 @@ const Header: React.FC = () => {
             <a 
               key={item.href} 
               href={item.href} 
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                handleNavigationClick(`${item.label} (Mobile)`);
+              }}
               className="text-lg font-bold text-gray-800 hover:text-primary py-2 border-b border-gray-50 last:border-0"
             >
               {item.label}
             </a>
           ))}
-          <button className="w-full bg-primary text-white py-4 rounded-xl font-bold mt-2 hover:bg-primary-dark transition-colors">
+          {/* <button 
+            className="w-full bg-primary text-white py-4 rounded-xl font-bold mt-2 hover:bg-primary-dark transition-colors"
+            onClick={() => {
+              setIsMobileMenuOpen(false);
+              handleNavigationClick('Matricule-se Agora (Mobile)');
+            }}
+          >
             Matricule-se Agora
-          </button>
+          </button> */}
         </div>
       )}
     </header>

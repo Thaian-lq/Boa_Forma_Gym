@@ -62,13 +62,13 @@ export const TRAINERS: Trainer[] = [
 export const PLANS: Plan[] = [
   {
     id: 'basic',
-    name: 'Plano Fitness',
-    features: ['Acesso à musculação', 'Avaliação física bimestral', 'Horário livre'],
+    name: 'Plano Musculação',
+    features: ['Acesso à musculação', 'Horário livre', ],
   },
   {
     id: 'pro',
-    name: 'Plano Premium',
-    features: ['Todas as aulas coletivas', 'Musculação completa', '1 Convidado por mês', 'Avaliação física mensal'],
+    name: 'Plano Musculação & Aulas Coletivas',
+    features: ['Musculação completa', 'Circ. Funcional', 'Pump', 'Fit 30', 'Gap', 'Step'],
     highlight: true,
   },
   {

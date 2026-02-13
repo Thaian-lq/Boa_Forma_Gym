@@ -1,5 +1,5 @@
 
-import { ClassItem, Trainer, Plan } from './types';
+import { ClassItem, Trainer, Plan, Avaliation } from './types';
 
 export const CLASSES: ClassItem[] = [
   {
@@ -63,11 +63,11 @@ export const PLANS: Plan[] = [
   {
     id: 'basic',
     name: 'Plano Musculação',
-    features: ['Acesso à musculação', 'Horário livre', ],
+    features: ['Acesso à musculação', 'Horário livre'],
   },
   {
     id: 'pro',
-    name: 'Plano Musculação & Aulas Coletivas',
+    name: 'Musculação & Aulas Coletivas',
     features: ['Musculação completa', 'Circ. Funcional', 'Pump', 'Fit 30', 'Gap', 'Step'],
     highlight: true,
   },
@@ -77,3 +77,17 @@ export const PLANS: Plan[] = [
     features: ['Funcional Kids especializado', 'Horários flexíveis', 'Acompanhamento pedagógico'],
   }
 ];
+
+export const AVALIATION: Avaliation[] = [
+  {
+    id: '1',
+    title: 'Avaliação Bioimpedância',
+    description: 'Análise detalhada da composição corporal, força, flexibilidade e resistência para personalizar seu treino.',
+  },
+  {
+    id: '2',
+    title: 'Consulta Nutricional',
+    description: 'Orientação nutricional personalizada para potencializar seus resultados e manter uma alimentação saudável.',
+  }
+
+]

@@ -21,3 +21,9 @@ export interface Plan {
   features: string[];
   highlight?: boolean;
 }
+
+export interface Avaliation {
+  id: string;
+  title: string;
+  description: string;
+}

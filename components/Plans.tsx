@@ -61,7 +61,7 @@ const Plans: React.FC = () => {
                 </div>
                 
                 {/* BOTÃO SABER MAIS COM ANALYTICS */}
-                <button 
+                {/* <button 
                   onClick={() => handlePlanClick(plan.name)}
                   className={`w-full py-4 rounded-xl font-bold transition-all ${
                     plan.highlight 
@@ -70,11 +70,12 @@ const Plans: React.FC = () => {
                   }`}
                 >
                   Saber mais
-                </button>
+                </button> */}
               </div>
             </div>
           ))}
         </div>
+      
 
         {/* Partners Section */}
         <div className="max-w-4xl mx-auto">
@@ -138,6 +139,17 @@ const Plans: React.FC = () => {
               </p>
             </div> */}
           </div>
+          
+          <section className="mt-16">
+            <div className="text-center max-w-2xl mx-auto mb-16">
+              <h2 className="text-4xl font-black text-gray-900 mb-4 tracking-tight uppercase">Consulta e Avaliação</h2>
+              <div className="w-20 h-1.5 bg-primary mx-auto mb-6 rounded-full"></div>
+              <p className="text-gray-600 font-medium">
+                Opções para melhor entendimento e assertividade nos próximos passos para buscar o seu melhor desempenho.
+              </p>
+            </div>
+          </section>
+
         </div>
       </div>
     </section>

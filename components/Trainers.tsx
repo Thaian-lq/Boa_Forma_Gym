@@ -86,11 +86,8 @@ const Trainers: React.FC = () => {
                     <h4 className="text-xl font-black text-gray-900 mb-1">{trainer.name}</h4>
                     <p className="text-primary font-bold text-sm uppercase tracking-wider mb-4">{trainer.specialty}</p>
                     <div className="flex justify-center gap-4">
-                      <a href="#" className="p-2 bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition-all transform hover:-translate-y-1">
+                      <a href="#" className="p-2 bg-gray-100 rounded-full text-gray-600 hover:bg-primary-light hover:text-white transition-all transform hover:-translate-y-1">
                         <Instagram size={18} />
-                      </a>
-                      <a href="#" className="p-2 bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition-all transform hover:-translate-y-1">
-                        <Linkedin size={18} />
                       </a>
                     </div>
                   </div>

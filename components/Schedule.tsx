@@ -18,9 +18,9 @@ const Schedule: React.FC = () => {
             <p className="text-gray-400 text-lg mb-8 font-medium leading-relaxed">
               Estamos abertos desde cedo para garantir que você não perca seu treino, não importa quão corrida seja sua rotina. Venha treinar no seu tempo!
             </p>
-            <div className="bg-primary/10 border border-primary/20 p-6 rounded-2xl">
-              <p className="text-primary-light font-bold flex items-center gap-2">
-                <span className="w-2 h-2 bg-primary-light rounded-full animate-pulse"></span>
+            <div className="bg-light/10 border border-light/20 p-6 rounded-2xl">
+              <p className="text-light-light font-bold flex items-center gap-2">
+                <span className="w-2 h-2 bg-light-light rounded-full animate-pulse"></span>
                 Academia climatizada e segura
               </p>
             </div>
@@ -32,7 +32,7 @@ const Schedule: React.FC = () => {
               <div key={idx} className={`p-6 rounded-3xl border transition-all ${item.closed ? 'bg-white/5 border-white/10' : 'bg-white/10 border-white/20 hover:bg-white/[0.15]'}`}>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
-                    <div className={`p-3 rounded-2xl ${item.closed ? 'bg-red-500/20 text-red-400' : 'bg-primary/20 text-primary-light'}`}>
+                    <div className={`p-3 rounded-2xl ${item.closed ? 'bg-red-500/20 text-red-400' : 'bg-primary-light/20 text-secondary-light'}`}>
                       <item.icon size={24} />
                     </div>
                     <div>

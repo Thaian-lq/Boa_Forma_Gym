@@ -8,7 +8,7 @@ const Location: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-4xl font-black text-gray-900 mb-6 tracking-tight uppercase">Onde <span className="text-primary">Estamos</span></h2>
+            <h2 className="text-4xl font-black text-gray-900 mb-6 tracking-tight uppercase">Onde <span className="text-primary-light">Estamos</span></h2>
             <div className="w-20 h-1.5 bg-primary mb-8 rounded-full"></div>
             
             <p className="text-gray-600 text-lg mb-10 font-medium">

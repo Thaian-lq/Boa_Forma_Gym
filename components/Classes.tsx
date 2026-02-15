@@ -5,13 +5,13 @@ import * as Icons from 'lucide-react';
 
 const Classes: React.FC = () => {
   return (
-    <section id="aulas" className="py-24 bg-white">
+    <section id="aulas" className="py-24 bg-gray-900 text-white">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
           <div className="max-w-xl">
-            <h2 className="text-4xl font-black text-gray-900 mb-4 tracking-tight uppercase">Nossas Atividades</h2>
-            <div className="w-20 h-1.5 bg-primary mb-6 rounded-full"></div>
-            <p className="text-gray-600 font-medium text-lg">
+            <h2 className="text-4xl font-black text-white mb-4 tracking-tight uppercase">Nossas Atividades</h2>
+            <div className="w-20 h-1.5 bg-light mb-6 rounded-full"></div>
+            <p className="text-gray-400 font-medium text-lg">
               Explore uma variedade de aulas projetadas para queimar gordura, ganhar força e se divertir.
             </p>
           </div>

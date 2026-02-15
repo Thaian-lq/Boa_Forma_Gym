@@ -89,7 +89,15 @@ const Plans: React.FC = () => {
               {/* WELLHUB */}
               <div className="flex items-center gap-4 group">
                 <div className="w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center transition-colors group-hover:bg-primary/10">
-                  <Check className="text-primary" size={32} />
+                  <a 
+                    href="https://wellhub.com/pt-br/search/partners/academia-boa-forma-7a03f7b4-852d-4dd8-8dcf-f72d41cfca8c/" 
+                    className="text-2xl font-black text-gray-900 transition-all duration-300 hover:text-primary" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    onClick={() => handlePartnerClick('Wellhub')}>
+                    <Check className="text-primary" size={32} />
+                  </a>
+                  
                 </div>
                 <div className="text-left">
                   <p className="text-xs font-bold text-gray-400 uppercase">Parceiro Oficial</p>
@@ -110,7 +118,16 @@ const Plans: React.FC = () => {
               {/* TOTALPASS */}
               <div className="flex items-center gap-4 group">
                 <div className="w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center transition-colors group-hover:bg-primary/10">
+                  <a 
+                    href="https://totalpass.com/br/academias/academia-boa-forma-301b1c0b-e4ba-4539-8fff-33a3e8336154/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-2xl font-black text-gray-900 transition-all duration-300 hover:text-primary"
+                    onClick={() => handlePartnerClick('TotalPass')}>
                   <Check className="text-primary" size={32} />
+                  </a>
+                  
+                  
                 </div>
                 <div className="text-left">
                   <p className="text-xs font-bold text-gray-400 uppercase">Parceiro Oficial</p>

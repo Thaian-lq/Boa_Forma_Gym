@@ -16,7 +16,7 @@ const Schedule: React.FC = () => {
           <div>
             <h2 className="text-4xl font-black mb-6 tracking-tight uppercase">Horário de <br/> <span className="text-primary-light">Funcionamento</span></h2>
             <p className="text-gray-400 text-lg mb-8 font-medium leading-relaxed">
-              Estamos abertos desde cedo para garantir que você não perca seu treino, não importa quão corrida seja sua rotina. Venha treinar no seu tempo!
+              Estamos funcionando desde cedo para garantir que você não perca seu treino, não importa quão corrida seja sua rotina. Venha treinar no seu tempo!
             </p>
             <div className="bg-light/10 border border-light/20 p-6 rounded-2xl">
               <p className="text-light-light font-bold flex items-center gap-2">
@@ -37,7 +37,7 @@ const Schedule: React.FC = () => {
                     </div>
                     <div>
                       <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-1">{item.days}</p>
-                      <p className={`text-2xl font-black ${item.closed ? 'text-red-400' : 'text-white'}`}>{item.time}</p>
+                      <p className={`text-2xl font-bold ${item.closed ? 'text-red-400' : 'text-white'}`}>{item.time}</p>
                     </div>
                   </div>
                 </div>

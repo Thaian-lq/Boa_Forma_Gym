@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-6">
               <div className="p-2 rounded-lg bg-primary">
-                <Dumbbell className="text-white" size={24} />
+                <Dumbbell className="text-light" size={24} />
               </div>
               <div className="flex flex-col leading-tight">
                 <span className="font-black text-xl tracking-tighter">BOA FORMA</span>

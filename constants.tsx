@@ -63,7 +63,7 @@ export const PLANS: Plan[] = [
   {
     id: 'basic',
     name: 'Plano Musculação',
-    features: ['Acesso à musculação', 'Horário livre'],
+    features: ['Acesso à musculação', 'Horário livre', 'Fichas de treino personalizada', 'Acompanhamento profissional'],
   },
   {
     id: 'pro',
@@ -83,11 +83,15 @@ export const AVALIATION: Avaliation[] = [
     id: '1',
     title: 'Avaliação Bioimpedância',
     description: 'Análise detalhada da composição corporal, força, flexibilidade e resistência para personalizar seu treino.',
+    values_aluno: 'R$ 59,00',
+    values_externo: 'R$ 89,00',
   },
   {
     id: '2',
     title: 'Consulta Nutricional',
     description: 'Orientação nutricional personalizada para potencializar seus resultados e manter uma alimentação saudável.',
+    values_aluno: 'R$ 139,00',
+    values_externo: 'R$ 179,00',
   }
 
 ]

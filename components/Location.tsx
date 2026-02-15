@@ -8,11 +8,10 @@ const Location: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-4xl font-black text-gray-900 mb-6 tracking-tight uppercase">Onde <span className="text-primary-light">Estamos</span></h2>
-            <div className="w-20 h-1.5 bg-primary mb-8 rounded-full"></div>
-            
+            <h2 className="text-4xl font-black text-gray-900 mb-6 tracking-tight uppercase">Onde <span className="text-light-dark px-1">Estamos</span></h2> 
+            <div className="w-20 h-1.5 bg-light mb-8 rounded-full"></div>
             <p className="text-gray-600 text-lg mb-10 font-medium">
-              Localizada em um ponto estratégico de Volta Redonda, nossa unidade oferece fácil acesso, estacionamento e total segurança para seu treino.
+              Localizada em um ponto estratégico de Volta Redonda, nossa unidade oferece fácil acesso e total segurança para seu treino.
             </p>
 
             <div className="space-y-8">
@@ -22,7 +21,7 @@ const Location: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Endereço Completo</h4>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 font-medium">
                     Rua 22, 647 – Jardim Vila Rica – Tiradentes<br/>
                     Volta Redonda – RJ | CEP: 27259-240
                   </p>

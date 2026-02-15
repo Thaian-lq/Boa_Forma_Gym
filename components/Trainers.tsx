@@ -18,23 +18,23 @@ const Trainers: React.FC = () => {
     <section id="professores" className="py-24 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-black text-gray-900 mb-4 tracking-tight uppercase">Equipe de Boa Forma</h2>
+          <h2 className="text-4xl font-black text-gray-900 mb-4 tracking-tight uppercase">Equipe Boa Forma</h2>
           <div className="w-20 h-1.5 bg-primary mx-auto mb-6 rounded-full"></div>
-          <p className="text-gray-600 font-medium">Nossos profissionais são altamente qualificados para te guiar em cada passo.</p>
+          <p className="text-gray-600 text-lg mb-8 font-medium leading-relaxed">Nossos profissionais são altamente qualificados para te guiar em cada passo.</p>
         </div>
 
         <div className="relative">
-          {/* Custom Navigation Buttons */}
-          <div className="hidden md:flex justify-center gap-4 mb-8">
+          {/* botões de navegação */}
+            {/* <div className="hidden md:flex justify-center gap-4 mb-8">
             <button className="trainer-prev-btn w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-gray-700 hover:bg-primary hover:text-white transition-all border border-gray-200">
               <ChevronLeft size={24} />
             </button>
             <button className="trainer-next-btn w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-gray-700 hover:bg-primary hover:text-white transition-all border border-gray-200">
               <ChevronRight size={24} />
             </button>
-          </div>
+          </div> */}
 
-          {/* Swiper Carousel */}
+          {/* Swiper Carrossel */}
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={24}
@@ -70,6 +70,7 @@ const Trainers: React.FC = () => {
             loop={true}
             className="pb-12"
           >
+            
             {TRAINERS.map((trainer) => (
               <SwiperSlide key={trainer.id}>
                 <div className="bg-white rounded-3xl overflow-hidden group h-full">

@@ -33,7 +33,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className={`p-2 rounded-lg ${isScrolled ? 'bg-primary' : 'bg-white'}`}>
-            <Dumbbell className={isScrolled ? 'text-white' : 'text-primary'} size={24} />
+            <Dumbbell className={isScrolled ? 'text-light' : 'text-primary'} size={24} />
           </div>
           <div className="flex flex-col leading-tight">
             <span className={`font-black text-xl tracking-tighter ${isScrolled ? 'text-gray-900' : 'text-white'}`}>BOA FORMA</span>

@@ -35,11 +35,11 @@ const Classes: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent"></div>
                 
                 <div className="absolute bottom-0 left-0 right-0 p-8">
-                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white mb-4 transform -translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 shadow-lg shadow-primary/20">
+                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-light mb-4 transform -translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 shadow-lg shadow-primary/20">
                     <IconComponent size={24} />
                   </div>
                   <h3 className="text-2xl font-black text-white mb-2">{item.title}</h3>
-                  <p className="text-gray-300 text-sm font-medium line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <p className="text-gray-300 text-sm font-medium line-clamp-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     {item.description}
                   </p>
                 </div>

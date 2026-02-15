@@ -10,7 +10,7 @@ export interface Trainer {
   id: string;
   name: string;
   specialty: string;
-  //image: string;
+  image: string;
   instagramURL?:string;
   linkedinURL?:string;
 }
@@ -26,4 +26,6 @@ export interface Avaliation {
   id: string;
   title: string;
   description: string;
+  values_aluno: string;
+  values_externo: string;
 }

@@ -63,18 +63,27 @@ export const PLANS: Plan[] = [
   {
     id: 'basic',
     name: 'Plano Musculação',
-    features: ['Acesso à musculação', 'Horário livre', 'Fichas de treino personalizada', 'Acompanhamento profissional'],
+    features: ['Acesso à musculação', 'Horário livre', 'Fichas de treino personalizada', 'Acompanhamento profissional', "8% de desconto com plano família"],
+    values_anual: 'Anual 12x R$ 109,00',
+    values_mensal: 'Mensal R$ 139,00',
+    values_semestral: 'Semestral 6x R$ 119,00',
   },
   {
     id: 'pro',
     name: 'Musculação & Aulas Coletivas',
-    features: ['Musculação completa', 'Circ. Funcional', 'Pump', 'Fit 30', 'Gap', 'Step'],
+    features: ['Musculação completa', 'Circ. Funcional', 'Pump', 'Fit 30', 'Gap', 'Step', "8% de desconto com plano família"],
     highlight: true,
+    values_anual: 'Anual 12x R$ 129,00',
+    values_mensal: 'Mensal R$ 179,00',
+    values_semestral: 'Semestral 6x R$ 149,00',
   },
   {
     id: 'kids',
     name: 'Plano Kids',
     features: ['Funcional Kids especializado', 'Horários flexíveis', 'Acompanhamento pedagógico'],
+    values_anual: 'R$ ',
+    values_mensal: 'R$ ',
+    values_semestral: 'R$ ',
   }
 ];
 

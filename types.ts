@@ -20,12 +20,16 @@ export interface Plan {
   name: string;
   features: string[];
   highlight?: boolean;
+  values_anual: string;
+  values_mensal: string;
+  values_semestral: string;
 }
 
 export interface Avaliation {
   id: string;
   title: string;
   description: string;
-  values_aluno: string;
-  values_externo: string;
+  values_anual: string;
+  values_mensal: string;
+  values_semestral: string;
 }

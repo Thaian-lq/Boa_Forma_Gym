@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, Info } from 'lucide-react';
+import { Check, Info, BanknoteArrowUp } from 'lucide-react';
 import { PLANS } from '../constants';
 import { AVALIATION } from '../constants';    
 import { logEvent } from '../src/analytics';
@@ -57,8 +57,8 @@ const Plans: React.FC = () => {
 
               <div className="mt-auto">
                 <div className="flex items-center gap-2 text-sm text-gray-500 mb-4 bg-gray-100 p-3 rounded-lg">
-                  <Info size={16} />
-                  <span>Consulte valores no balcão</span>
+                  <BanknoteArrowUp size={30} />
+                  <span>{plan.values_anual} | {plan.values_mensal} | {plan.values_semestral}</span>
                 </div>
                 
                 {/* BOTÃO SABER MAIS COM ANALYTICS */}
@@ -178,8 +178,8 @@ const Plans: React.FC = () => {
                     {avaliaton.description}
                   </span>
                   <div className="mt-4 flex items-center gap-4 text-sm text-gray-500 bg-gray-100 p-3 rounded-lg">
-                    <Info size={16} />
-                    <span>Valores: {avaliaton.values_aluno} (aluno) / {avaliaton.values_externo} (externo)</span>
+                    <BanknoteArrowUp size={25} />
+                    <span>Valores: {avaliaton.values_aluno} (aluno) | {avaliaton.values_externo} (externo)</span>
                   </div>
                 </div>
               )}

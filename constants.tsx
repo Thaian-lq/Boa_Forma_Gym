@@ -6,7 +6,8 @@ export const CLASSES: ClassItem[] = [
     id: '1',
     title: 'Musculação',
     description: 'Treino de força completo com equipamentos de última geração e supervisão profissional.',
-    image: 'https://v4excellencefitness.com.br/wp-content/uploads/2024/08/23478.jpg', 
+    image: "./imgs/image.png", 
+    //'https://v4excellencefitness.com.br/wp-content/uploads/2024/08/23478.jpg', 
     icon: 'Dumbbell'
   },
   {

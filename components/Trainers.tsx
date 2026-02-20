@@ -74,7 +74,7 @@ const Trainers: React.FC = () => {
             {TRAINERS.map((trainer) => (
               <SwiperSlide key={trainer.id}>
                 <div className="bg-white rounded-3xl overflow-hidden group h-full">
-                  <div className="relative h-72 overflow-hidden">
+                  <div className="relative h-80 overflow-hidden">
                     <img 
                       src={trainer.image} 
                       alt={trainer.name} 

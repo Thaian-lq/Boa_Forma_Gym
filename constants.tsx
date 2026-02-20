@@ -7,7 +7,7 @@ export const CLASSES: ClassItem[] = [
     id: '1',
     title: 'Musculação',
     description: 'Treino de força completo com equipamentos de última geração e supervisão profissional.',
-    image: "/imgs/image.png", 
+    image: "/imgs/musculacao.png", 
     //'https://v4excellencefitness.com.br/wp-content/uploads/2024/08/23478.jpg', 
     icon: 'Dumbbell'
   },
@@ -37,25 +37,37 @@ export const CLASSES: ClassItem[] = [
 export const TRAINERS: Trainer[] = [
   {
     id: '1',
-    name: 'Matheus José',
+    name: 'Prof. Matheus José',
     specialty: 'Personal Trainer & Musculação',
     image:'https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png',
   },
   {
     id: '2',
-    name: 'Bianca',
+    name: 'Prof. Bianca',
     specialty: 'Especialista em Funcional Kids',
-    image: 'https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png',
+    image: '/imgs/profbianca.jpeg',
   },
   {
     id: '3',
-    name: 'Virna',
+    name: 'Prof. Virna',
     specialty: 'Instrutor de Bike Indoor',
     image:'https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png',
   },
   {
     id: '4',
-    name: 'Curitiba',
+    name: 'Prof. Curitiba',
+    specialty: 'Personal Trainer & Musculação',
+    image: '/imgs/profcuritiba.jpeg',
+  },
+  {
+    id: '5',
+    name: 'Prof. Luiz',
+    specialty: 'Personal Trainer & Musculação',
+    image: 'https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png',
+  },
+  {
+    id: '6',
+    name: 'Prof. Matheus',
     specialty: 'Personal Trainer & Musculação',
     image: 'https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png',
   }

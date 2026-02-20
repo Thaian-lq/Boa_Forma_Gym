@@ -51,7 +51,7 @@ export const TRAINERS: Trainer[] = [
     id: '3',
     name: 'Prof. Virna',
     specialty: 'Instrutor de Bike Indoor',
-    image:'https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png',
+    image:'/imgs/profvirna.jpeg',
   },
   {
     id: '4',
@@ -63,13 +63,13 @@ export const TRAINERS: Trainer[] = [
     id: '5',
     name: 'Prof. Luiz',
     specialty: 'Personal Trainer & Musculação',
-    image: 'https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png',
+    image: '/imgs/profluiz.jpeg',
   },
   {
     id: '6',
     name: 'Prof. Matheus',
     specialty: 'Personal Trainer & Musculação',
-    image: 'https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png',
+    image: '/imgs/profmatheus.jpeg',
   }
 ];
 

@@ -44,13 +44,13 @@ export const TRAINERS: Trainer[] = [
   {
     id: '2',
     name: 'Prof. Bianca',
-    specialty: 'Especialista em Funcional Kids',
+    specialty: 'Personal Trainer & Musculação',
     image: '/imgs/profbianca.jpeg',
   },
   {
     id: '3',
     name: 'Prof. Virna',
-    specialty: 'Instrutor de Bike Indoor',
+    specialty: 'Personal Trainer & Musculação',
     image:'/imgs/profvirna.jpeg',
   },
   {

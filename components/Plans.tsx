@@ -169,7 +169,7 @@ const Plans: React.FC = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
               {AVALIATION.map((avaliaton)=>
-                <div key={avaliaton.id} className="bg-white p-10 rounded-3xl border border-gray-100 shadow-xl">
+                <div key={avaliaton.id} className="bg-white p-10 rounded-3xl border border-gray-100 shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                   <h3 className="text-2xl font-black text-gray-800 mb-4 tracking-wider">{avaliaton.title}</h3>
                   {/* <p className="text-gray-600 font-medium mb-6">
                     {avaliaton.description}
